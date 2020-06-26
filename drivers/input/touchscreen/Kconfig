@@ -1242,4 +1242,15 @@ config TOUCHSCREEN_HIMAX_CHIPSET
 	  If unsure, say N.
 
 source "drivers/input/touchscreen/hxchipset/Kconfig"
+
+config TOUCHSCREEN_NVT
+	bool "Novatek Touchscreen Driver"
+	depends on I2C
+	help
+	  Say Y here if you have a Novatek Touchscreen.
+
+	  If unsure, say N.
+
+source "drivers/input/touchscreen/nvt/Kconfig"
+
 endif

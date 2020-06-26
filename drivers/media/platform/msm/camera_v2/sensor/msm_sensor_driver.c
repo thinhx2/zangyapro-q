@@ -933,6 +933,9 @@ int32_t msm_sensor_driver_probe(void *setting,
 			|| ((strcmp(slave_info->sensor_name,"s5k5e8_ofilm_zangya") == 0) && (s_vendor_eeprom[i].module_id == MID_OFILM))
 			|| ((strcmp(slave_info->sensor_name,"s5k2l8_holitech_zangya") == 0) && (s_vendor_eeprom[i].module_id == MID_HOLITECH1))
 			|| ((strcmp(slave_info->sensor_name,"s5k5e8_holitech_zangya") == 0) && (s_vendor_eeprom[i].module_id == MID_HOLITECH1))
+			|| ((strcmp(slave_info->sensor_name,"s5k2l8sx_zero6") == 0) && (s_vendor_eeprom[i].module_id == MID_SUNNY))
+			|| ((strcmp(slave_info->sensor_name,"s5k2x7sp_zero6") == 0) && (s_vendor_eeprom[i].module_id == MID_SUNNY))
+			|| ((strcmp(slave_info->sensor_name,"s5k2t7sp_zero6") == 0) && (s_vendor_eeprom[i].module_id == MID_OFILM))
 			) {
 				pr_err("module found!probe continue!eeprom_name=%s\n", slave_info->eeprom_name);
 				break;

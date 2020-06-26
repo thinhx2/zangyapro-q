@@ -1730,6 +1730,21 @@ static camera_vendor_module_id s5k4h7yx_ofilm_off0812_get_otp_vendor_module_id(s
 	return mid;
 }
 
+static camera_vendor_module_id sunny_s5k2l8sx_get_otp_vendor_module_id(struct msm_eeprom_ctrl_t *e_ctrl)
+{
+	return MID_SUNNY;
+}
+
+static camera_vendor_module_id sunny_s5k2x7sp_get_otp_vendor_module_id(struct msm_eeprom_ctrl_t *e_ctrl)
+{
+	return MID_SUNNY;
+}
+
+static camera_vendor_module_id ofilm_olf0686_s5k2t7sp_get_otp_vendor_module_id(struct msm_eeprom_ctrl_t *e_ctrl)
+{
+	return MID_OFILM;
+}
+
 static uint8_t get_otp_vendor_module_id(struct msm_eeprom_ctrl_t *e_ctrl, const char *eeprom_name)
 {
 	camera_vendor_module_id module_id=MID_NULL;
@@ -1745,6 +1760,12 @@ static uint8_t get_otp_vendor_module_id(struct msm_eeprom_ctrl_t *e_ctrl, const 
 		module_id = s5k2l8_holitech_8941_get_otp_vendor_module_id(e_ctrl);
 	} else if (strcmp(eeprom_name, "s5k5e8_holitech_8941") == 0) {
 		module_id = s5k5e8_holitech_8941_get_otp_vendor_module_id(e_ctrl);
+	}else if(strcmp(eeprom_name, "sunny_s5k2l8sx_zero6") == 0){
+		module_id = sunny_s5k2l8sx_get_otp_vendor_module_id(e_ctrl);
+	}else if(strcmp(eeprom_name, "sunny_s5k2x7sp_zero6") == 0){
+		module_id = sunny_s5k2x7sp_get_otp_vendor_module_id(e_ctrl);
+	}else if(strcmp(eeprom_name, "ofilm_olf0686_s5k2t7sp_zero6") == 0){
+		module_id = ofilm_olf0686_s5k2t7sp_get_otp_vendor_module_id(e_ctrl);
 	}
 	pr_err("%s eeprom_name=%s, module_id=%d\n",__func__,eeprom_name,module_id);
 	if (module_id>=MID_MAX) module_id = MID_NULL;

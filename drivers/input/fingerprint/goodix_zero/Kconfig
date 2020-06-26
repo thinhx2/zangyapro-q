@@ -1,0 +1,12 @@
+#
+# Goodix Fingerprint device configuration
+#
+
+menu "Goodix Fingerprint device support"
+
+config GOODIX_GF5208_FINGERPRINT
+	bool "Goodix gf5208 fingerprint Driver"
+	default n
+	help
+	
+endmenu

@@ -1,0 +1,72 @@
+
+qcom,zero6_3600mah_averaged_masterslave_apr24th2018 {
+	qcom, = <24>;
+	/* #zero6_3600mah_averaged_masterslave_apr24th2018*/
+	qcom,max-voltage-uv = <4400000>;
+	qcom,fastchg-current-ma = <2400>;
+	qcom,nom-batt-capacity-mah = <3600>;
+	qcom,batt-id-kohm = <47>;
+	qcom,battery-beta = <3380>;
+	qcom,fg-cc-cv-threshold-mv = <4390>;
+	qcom,battery-type = "zero6_3600mah_averaged_masterslave_apr24th2018";
+	qcom,checksum = <0xFA57>;
+	qcom,gui-version = "PM660GUI - 0.0.0.45";
+	qcom,fg-profile-data = [
+		 46 1F F9 05
+		 2C 0A 9E 06
+		 E9 1C DB 01
+		 ED 0D 68 0A
+		 AF 17 CE 23
+		 84 44 2F 5A
+		 75 00 00 00
+		 11 00 00 00
+		 00 00 DF A2
+		 74 CD F9 B2
+		 1D 00 08 00
+		 87 E2 DA ED
+		 9F FD 02 F2
+		 3B 0D AD 0B
+		 AE 0D 2C 2B
+		 1B 06 09 20
+		 27 00 14 00
+		 4E 20 F3 04
+		 ED 0A E3 05
+		 DF 1C 9C 02
+		 B5 0C 80 0B
+		 94 18 B8 23
+		 0E 44 E4 5A
+		 74 00 00 00
+		 0E 00 00 00
+		 00 00 E2 D5
+		 20 C2 BA CA
+		 19 00 00 00
+		 0A EB DA ED
+		 28 07 2F EA
+		 9E ED 05 0A
+		 52 E3 D4 1A
+		 AE 33 CC FF
+		 07 10 00 00
+		 2B 0E 66 46
+		 19 00 40 00
+		 82 01 0A FA
+		 FF 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+		 00 00 00 00
+	];
+};

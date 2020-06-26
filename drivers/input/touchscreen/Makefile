@@ -100,3 +100,4 @@ obj-$(CONFIG_TOUCHSCREEN_ROHM_BU21023)	+= rohm_bu21023.o
 obj-$(CONFIG_TOUCHSCREEN_ST)		+= st/
 obj-$(CONFIG_TOUCHSCREEN_HIMAX_I2C)	+= hxchipset/
 obj-$(CONFIG_READ_TPINFO)		+= lct_tp_fm_info.o
+obj-$(CONFIG_TOUCHSCREEN_NVT)		+= nvt/

@@ -984,6 +984,12 @@ config SND_SOC_TPA6130A2
 	tristate "Texas Instruments TPA6130A2 headphone amplifier"
 	depends on I2C
 
+config SND_SOC_TFA9891
+        tristate "Support TFA9891"
+        depends on I2C
+        help
+        TFA9891 driver
+
 config SND_SOC_MSM_STUB
 	tristate
 

@@ -1239,6 +1239,22 @@ config ZANGYA_DTS
           If you do not wish to build a kernel that runs
           on this chipset,say 'N' here.
 
+config PRODUCT_ZERO6
+        bool "Enable Support for the product zero6"
+        default n
+        help
+          This enables support for the product zero6.
+          If you do not wish to build a kernel that runs
+          on this chipset,say 'N' here.
+
+config PRODUCT_ZERO6PRO
+        bool "Enable Support for the product zero6pro"
+        default n
+        help
+          This enables support for the product zero6pro.
+          If you do not wish to build a kernel that runs
+          on this chipset,say 'N' here.
+
 source "net/Kconfig"
 
 source "drivers/Kconfig"

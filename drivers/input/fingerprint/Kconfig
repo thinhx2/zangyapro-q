@@ -17,3 +17,4 @@ config FINGERPRINT_FPC1020
 
 endif
 endmenu
+source "drivers/input/fingerprint/goodix_zero/Kconfig"
